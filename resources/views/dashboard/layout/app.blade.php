@@ -15,6 +15,10 @@
     <link href="plugin/css/bootstrap.min.css" rel="stylesheet" />
     <link href="plugin/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
     <link href="plugin/css/demo.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0/dist/trix.css">
+    <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -37,11 +41,10 @@
     <script src="plugin/js/plugins/bootstrap-notify.js"></script>
     <script src="plugin/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
     <script src="plugin/js/demo.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            demo.initDashboardPageCharts();
-            demo.showNotification();
 
+    <script>
+        $(document).ready(function() {
+            $('#tabel-data').DataTable();
         });
     </script>
 

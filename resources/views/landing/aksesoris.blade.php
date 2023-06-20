@@ -7,6 +7,9 @@
                     <div class="row" style="padding-bottom: 10%">
                         <div class="products-tabs">
                             <div class="products-slick" data-nav="#slick-nav-1">
+                                @if($produk->isEmpty())
+                                <p>Tidak Ada Data Produk Aksesoris.</p>
+                                @else
                                 @foreach ($produk as $produk)
                                     <div class="product">
                                         <div class="product-img">
@@ -30,6 +33,7 @@
                                         </div>
                                     </div>
                                 @endforeach
+                                @endif
                             </div>
 
                         </div>
